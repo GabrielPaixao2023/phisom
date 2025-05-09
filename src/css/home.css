@@ -1,0 +1,346 @@
+/* primeira sessão do site */
+
+.primeira-sessao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.08);
+    /* sombra só para baixo e mais clara */
+}
+
+
+.trasformamos h1 {
+    margin-left: 7.5vw;
+    font-size: 3vw;
+    width: 40vw;
+}
+
+.ideias {
+    color: #349DA1;
+}
+
+.trasformamos p {
+    margin-left: 7.5vw;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+}
+
+
+.solicite-orcamento button {
+    margin-left: 7.5vw;
+    margin-top: 3vw;
+    background: linear-gradient(90deg, #349EA1 0%, #2E7E81 59%);
+    border-radius: 0.6vw;
+    border: none;
+    padding: 1.3vw 5vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.primeiraImg img {
+    margin-bottom: 10vw;
+    width: 35vw;
+    margin-left: 6vw;
+}
+
+/* segunda sessão do site */
+
+.segunda-sessao {
+    width: 100%;
+    height: auto;
+    margin-top: 10vw;
+}
+
+.sobre h2 {
+    font-size: 2vw;
+    margin-left: 7.5vw;
+}
+
+.sobre p {
+    font-size: 1.2vw;
+    margin-left: 7.5vw;
+    margin-top: 1.5vw;
+    width: 75vw;
+    line-height: 1.7vw;
+}
+
+/* terceira sessao do site */
+
+.terceira-sessao {
+    width: 100%;
+    height: auto;
+}
+
+.servicos h2 {
+    font-size: 2vw;
+    margin-left: 7.5vw;
+    margin-top: 5vw;
+}
+
+.cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* ou flex-start */
+    column-gap: 2.2786458333333335vw;
+    /* espaço horizontal entre os cards */
+    row-gap: 1.0416666666666667vw;
+    /* espaço vertical */
+    padding: 1.3020833333333333vw;
+
+}
+
+.cards-servicos>div {
+    /* Substituir por: */
+    flex: 1 1 calc(30% - 1.5vw);
+    background-color: #ffffff;
+    border-radius: 0.5208333333333334vw;
+    padding: 4vw;
+    max-width: 18.5vw;
+    box-shadow: -0.2604166666666667vw 0.2604166666666667vw 0.390625vw rgba(0, 0, 0, 0.08);
+    position: relative;
+    /* necessário para o hover funcionar */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards-servicos img,
+.cards-servicos p {
+    background-color: transparent;
+    /* garante que a imagem não tenha fundo */
+}
+
+.portfolios img {
+    width: 8vw;
+    /* ajuste conforme o tamanho desejado */
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    /* espaço entre imagem e texto */
+}
+
+/* Hover dos cards */
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Estilo do conteúdo oculto */
+.descricao-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #23a6d5, #23d5ab);
+    /* pode ajustar as cores */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    padding: 1.5vw;
+    transition: opacity 0.3s ease;
+    border-radius: 0.5vw;
+    pointer-events: none;
+}
+
+.card:hover .descricao-hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.descricao-hover p {
+    margin: 0.5vw 0;
+    font-size: 1.2vw;
+}
+
+.card img {
+    width: 8vw;
+    /* Era 8vw */
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.card .titulo p {
+    font-size: 2vw;
+    /* Era 1.5vw */
+}
+
+#titulo {
+    font-size: 1.5vw;
+}
+
+#titulo1 {
+    font-size: 1.5vw;
+    transform: translateY(1vw);
+}
+
+/* quarta sessao */
+
+.projetos h3 {
+    font-size: 2vw;
+    margin-left: 7.5vw;
+    margin-top: 5vw;
+}
+
+/* Área do carrossel */
+.carrossel-projetos {
+    padding: 2vw 7.5vw;
+}
+
+/* Card individual - será usado dentro de .swiper-slide */
+.projeto-card {
+    width: 100%;
+    max-width: 30vw;
+    height: 22vw;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3vw;
+}
+
+/* Imagem do card */
+.projeto-card img {
+    width: 30.4vw;
+    transform: translateX(-0.2vw);
+    border-radius: 8px;
+}
+
+/* Botão */
+.projeto-card button {
+    margin-top: 1.5vw;
+    padding: 1vw 4vw;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000000; /* cor da seta (altere se quiser branca etc.) */
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    top: 50%;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    transform: scale(1.2); /* leve efeito de destaque */
+}
+
+/* Ajuste do ícone da seta */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+/* Espaçamento entre slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* quinta-sessao */
+
+.diferencias h3 {
+    text-align: center;
+    font-size: 2vw;
+    color: #359EA2;
+    margin-top: 5vw;
+}
+
+.atendimento {
+    display: flex;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+
+.atendimento img {
+    width: 4vw;
+}
+
+.descricaoAtendimento h4 {
+    font-size: 1.8vw;
+    margin-left: 2vw;
+}
+
+.descricaoAtendimento p {
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.design-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10vw;
+}
+
+.descricaoDesign {
+    text-align: right;
+}
+
+.descricaoDesign h4 {
+    font-size: 1.8vw;
+    margin-right: 2vw;
+}
+
+.descricaoDesign p {
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    margin-top: 0.5vw;
+}
+
+.design-container img {
+    width: 4vw;
+}
+
+.design-container {
+    margin-top: 5vw;
+}
+
+/* Animação base: invisível e deslocado */
+.reveal-left,
+.reveal-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-left {
+    transform: translateX(-100px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateX(0);
+}

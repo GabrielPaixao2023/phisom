@@ -1,0 +1,39 @@
+header {
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Garante que o header fique acima dos outros elementos */
+}
+
+.center{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    margin: auto;
+    margin-top: 3vw;
+    height: 5vw;
+    overflow: hidden;
+}
+
+.center figure img{
+    margin-right: 35.2vw;
+    width: 12vw;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+}
+
+.menu-desktop {
+    margin-left: 4.5vw;
+}
+
+.menu-desktop li {
+    display: inline-block;
+    font-size: 1.3vw;
+    margin-top: 1vw;
+    margin-right: 3vw;
+}
+
